@@ -2,119 +2,56 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta lang='en'>
-        <title>Dexter Live</title>
-        <link rel="icon" href="dexterlogo.png">
+        <meta lang="en">
+        <title>Home - About Me</title>
     </head>
-    <script src = 'script.js'></script>
-    <style>
-        .dBoard{
+     <style>
+         .topBar{
+             background-color:rgb(128, 128, 128);
+         }
+         .parts{
+            text-align: center;
             margin: 30px;
             font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            background-color: white;
-            color: rgb(128, 128, 128);
+            background-color: rgb(128, 128, 128);
+            color: rgb(255, 255, 255);
             font-size: 30px;
             font-weight: 100;
             border-width: 0px;
-        }
-        .notif{
-            margin: 150px;
-        }
-        .LargeSpacer{
-            margin: 125px;
+         }
+         .hder{
+            margin: 0 auto;
+            text-align: center;
             font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            background-color: white;
-            color: rgb(255,255,255);
-            font-size: 30px;
-            font-weight: 100;
-        }
-        .SmallSpacer{
-            margin: 20px;
-            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            background-color: white;
-            color: rgb(255,255,255);
-            font-size: 30px;
-            font-weight: 100;
-        }
-        .currency{
-            position: relative;
-            top: -10px;
-            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            background-color: white;
+            background-color: rgb(255, 255, 255);
             color: rgb(128, 128, 128);
-            font-size: 20px;
-        }
-        .accessory{
-            padding-top: 50px;
-            padding-left: 50px;
-        }
-        .cat{
-            margin: 30px;
+            font-size: 120px;
+         }
+         .textP{
+            margin: 0 auto;
+            text-align: center;
             font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            background-color: white;
+            background-color: rgb(255, 255, 255);
             color: rgb(128, 128, 128);
             font-size: 30px;
-        }
-        .search{
-            color: rgb(128, 128, 128);
-            font-size: 30px;
-        }
-        .searchHats{
-            margin: 30px;
-            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            background-color: white;
-            color: rgb(128, 128, 128);
-            font-size: 30px;
-            font-weight: 100;
-        }
-    </style>
-    <body>
-        <div>
-            <input type="image"  id="saveform" src="dexterlogo.png" alt="Home" />
-            <button class = 'dBoard'>Dashboard</button>
-            <button class = 'dBoard'>Messaging</button>
-            <button class = 'dBoard'>Live</button>
-            <button class = 'dBoard'>Social</button>
-            <button class = 'dBoard'>Recordings</button>
-            <button class = 'dBoard'>Catalog</button>
-            <c class = 'LargeSpacer'>.</c>
-            <c class = 'currency'> ∞</c>
-            <img src = 'dextercredits.png'>
-            <c class = 'SmallSpacer'>.</c>
-            <input type="image"  id="saveform" src="notification.png" alt="Submit Form" />
-            <c class = 'SmallSpacer'>.</c>
-            <input type="image"  id="saveform" src="help.png" alt="Submit Form" />
-            <c class = 'SmallSpacer'>.</c>
-            <c class = 'dBoard'>Profile</c>
-        </div>
-        
-        <div>
-            <a href = 'hats.html' class = 'cat'>Hats</a>
-            <a href = 'hats.html' class = 'cat'>Hair</a>
-            <a href = 'hats.html' class = 'cat'>Shirts</a>
-            <a href = 'hats.html' class = 'cat'>Pants</a>
-            <input class = 'search' type='text' placeholder="Search Items Here">
-            <button class = 'searchHats'>Search</button>
-            <br>
-            <br>
-            <br>
-            <img src = 'hat.png'>
-            <c class = 'SmallSpacer'>...</c>
-            <img src="hat2.png">
-        </div>
-        <div>
-        </div> 
-        <div>
-            <input type="image"  id="saveform" src="buybutton.png" alt="Submit Form" />
-            <c class = 'SmallSpacer'>...</c>
-            <input type="image"  id="saveform" src="buybutton.png" alt="Submit Form" />
+         }
+         .photoHolder{
+             margin: 65px;
+         }
 
-        </div> 
-        <br>
+     </style>
+     <body>
+         <div class = 'topBar'>
+           <a href="home.html"><button class = 'parts'>Home</button></a>
+           <a href="projects.html"><button class = 'parts'>Projects</button></a>
+           <a href="aboutme.html"><button class = 'parts'>About me</button></a>
+           <a href="contactme.html"><button class = 'parts'>Contact me</button></a>
+         </div>
+         <br>
          <br>
          <br>
          <div class = 'hder'>
-             Projects
+             Home
          </div>
          <div class = 'photoHolder'>
             <img src="300.png" class = 'photoHolder'>
@@ -122,5 +59,12 @@
             <img src="300.png" class = 'photoHolder'>
             <img src="300.png" class = 'photoHolder'>
          </div>
-    </body>
+         <div class = 'textP'>
+             <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+            <br>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            <br>
+            <p>"Morbi pharetra libero id tincidunt malesuada." - Anonymous</p>  
+        </div>
+     </body>
 </html>
